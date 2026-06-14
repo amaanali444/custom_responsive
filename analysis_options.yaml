@@ -1,0 +1,98 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  language:
+    strict-casts: false
+    strict-raw-types: false
+    strict-inference: false
+
+linter:
+  rules:
+    # Architecture / imports
+    - always_use_package_imports
+    - avoid_relative_lib_imports
+    - directives_ordering
+    - combinators_ordering
+
+    # Safety
+    - await_only_futures
+    - unawaited_futures
+    - cancel_subscriptions
+    - close_sinks
+    - use_rethrow_when_possible
+    - control_flow_in_finally
+    - throw_in_finally
+    - avoid_catching_errors
+
+    # Type quality
+    - avoid_dynamic_calls
+    - collection_methods_unrelated_type
+    - tighten_type_of_initializing_formals
+    - prefer_typing_uninitialized_variables
+
+    # Const / immutability
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_const_literals_to_create_immutables
+    - prefer_final_fields
+    - prefer_final_locals
+
+    # API quality
+    - annotate_overrides
+    - use_super_parameters
+    - matching_super_parameters
+    - type_init_formals
+    - prefer_initializing_formals
+    - avoid_shadowing_type_parameters
+
+    # Readability
+    - require_trailing_commas
+    - prefer_double_quotes
+    - curly_braces_in_flow_control_structures
+    - sort_child_properties_last
+    - sort_unnamed_constructors_first
+    - comment_references
+
+    # Null safety
+    - unnecessary_null_checks
+    - unnecessary_null_aware_assignments
+
+    # Async
+    - avoid_void_async
+    - unnecessary_await_in_return
+
+    # Flutter
+    - use_colored_box
+    - use_decorated_box
+    - sized_box_for_whitespace
+    - sized_box_shrink_expand
+
+    # General correctness
+    - exhaustive_cases
+    - no_duplicate_case_values
+    - recursive_getters
+    - noop_primitive_operations
+    - valid_regexps
+    - unreachable_from_main
+
+    # Clean code
+    - unnecessary_lambdas
+    - unnecessary_overrides
+    - unnecessary_this
+    - unnecessary_late
+    - unnecessary_statements
+    - unnecessary_string_interpolations
+    - unnecessary_string_escapes
+    - prefer_expression_function_bodies
+    - prefer_contains
+    - prefer_is_empty
+    - prefer_is_not_empty
+    - prefer_if_null_operators
+    - prefer_iterable_whereType
+    - prefer_interpolation_to_compose_strings
+    - prefer_function_declarations_over_variables
+
+    # Misc
+    - avoid_print
+    - secure_pubspec_urls
+    - document_ignores
