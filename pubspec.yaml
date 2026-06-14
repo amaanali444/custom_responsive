@@ -1,6 +1,6 @@
 name: custom_responsive
 description: A lightweight 12-column responsive grid system for Flutter with breakpoints, offsets, nested grids, sliver support, and width-aware builders.
-version: 1.0.1
+version: 1.0.2
 
 homepage: https://github.com/amaanali444/custom_responsive
 repository: https://github.com/amaanali444/custom_responsive
